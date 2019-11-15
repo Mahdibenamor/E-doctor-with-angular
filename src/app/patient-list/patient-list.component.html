@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Vos Patients</h2>
+    <div class="list-group">
+      <button
+        class="list-group-item"
+        *ngFor="let Patient of Patients; let i = index"
+        (click)="onViewPatient(i)">
+        <h3 class="list-group-item-heading">
+          {{ Patient.name }}
+          <button class="btn btn-default pull-right" (click)="onDeletePatient(Patient)">
+            <span class="glyphicon glyphicon-minus"></span>
+          </button>
+        </h3>
+        <p class="list-group-item-text">{{ Patient.lastname }}</p>
+      </button>
+    </div>
+    <button class="btn btn-primary" (click)="onNewPatient()">Nouveau Patient</button>
+  </div>
+</div>
