@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "firebase": "^5.9.4",
     "jquery": "^3.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ng2-charts": "^2.2.2",
     "popper.js": "^1.15.0",
     "rxjs": "^6.4.0",
